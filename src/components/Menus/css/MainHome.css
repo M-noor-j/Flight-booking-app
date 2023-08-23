@@ -1,0 +1,17 @@
+.img-main-dashboard {
+  background: linear-gradient(
+      0deg,
+      rgba(18, 4, 122, 0.268),
+      rgba(18, 4, 122, 0.367)
+    ),
+    url(https://images.ctfassets.net/cnu0m8re1exe/6sLnMf6GKSgsXxbJbpGXWO/7ea7a98ebc24318f0d60b1f5484053de/shutterstock_707735803.jpg);
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  border-radius: 30px;
+}
+.heading {
+  line-height: 4rem;
+}
