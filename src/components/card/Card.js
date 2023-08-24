@@ -1,9 +1,11 @@
 import React from "react";
 import "./Card.css";
+import {Link} from "react-router-dom"
 const Card = ({img, title, description}) => {
-    // console.log(props.data,"hello brother")
+
   return (
     <>
+
       <div className="container-card mt-5 shadow">
         <a id="cubeLink" href="">
           <svg
@@ -52,6 +54,7 @@ const Card = ({img, title, description}) => {
         </div>
         <p className="flight-text pt-1">{description}</p>
       </div>
+
     </>
   );
 };

@@ -1,0 +1,40 @@
+.img-Flight-dashboard {
+    background: linear-gradient(
+        0deg,
+        rgba(18, 4, 122, 0.268),
+        rgba(18, 4, 122, 0.367)
+      ),
+      url(https://ak-s.tripcdn.com/modules/ibu/booking-flight-h5/assets/resource/image/home/bg_flights.fa74a391.png);
+    height: 15rem;
+  
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    border-radius: 30px;
+  }
+  .heading {
+    line-height: 4rem;
+  }
+  
+
+  /* ////
+   */
+   .bg-comp{
+    border-radius: 30px;
+   }
+   .calender-btn{
+    border-radius: 40px;
+   }
+   .text-btn-bg{
+    font-size: 12px;
+   }
+.selector{
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none ;
+}
+.btn-one-way{
+    background: #422AFB;
+    border-radius: 60px;
+}
