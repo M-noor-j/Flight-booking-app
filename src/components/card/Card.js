@@ -1,11 +1,11 @@
 import React from "react";
 import "./Card.css";
-import {Link} from "react-router-dom"
-const Card = ({img, title, description}) => {
-
+import { Link } from "react-router-dom";
+import Location from "../../assets/Location.png";
+import icon from "../../assets/icon.png";
+const Card = ({ img, title, description }) => {
   return (
     <>
-
       <div className="container-card mt-5 shadow">
         <a id="cubeLink" href="">
           <svg
@@ -23,38 +23,26 @@ const Card = ({img, title, description}) => {
               />
             </g>
           </svg>
-          <img
-            id="cube"
-            src={img}
-            alt="image-equilibrium"
-            border="0"
-          />
+          <img id="cube" src={img} alt="image-equilibrium" border="0" />
         </a>
 
-        <div id="ethAndDays" className="mt-2">
-          <div id="ethPlusIcon">
-            <svg width="11" height="18" xmlns="">
-              <path
-                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
-                fill="#00FFF8"
-              />
-            </svg>
-            <p id="eth">{title}</p>
+        <div id="ethAndDays" className="">
+          <div id="ethPlusIcon" className="d-flex align-items-center">
+            <img src={Location} alt="" style={{ width: "20px" }} className="" />
+            <p id="eth" className="ms-2">
+              {title}
+            </p>
           </div>
 
           <div id="clockPlusDays">
-            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
-                fill="#8BACD9"
-              />
-            </svg>
-            <p id="days">4.5</p>
+            <div className="d-flex align-items-center">
+          <img src={icon} alt="" style={{ width: "10px" ,height:"10px"}} className="" />
+            <p id="days" className="ms-2">4.5</p>
+            </div>
           </div>
         </div>
-        <p className="flight-text pt-1">{description}</p>
+        <p className="flight-text pt-1 w-50">{description}</p>
       </div>
-
     </>
   );
 };

@@ -1,0 +1,14 @@
+.img-hotel-dashboard {
+  background: linear-gradient(
+      0deg,
+      rgba(18, 4, 122, 0.268),
+      rgba(18, 4, 122, 0.367)
+    ),
+    url(https://c4.wallpaperflare.com/wallpaper/230/871/598/cotai-strip-galaxi-hotel-large-and-luxurious-hotel-casino-in-macau-china-desktop-wallpaper-in-hd-resolution-1920%C3%971200-wallpaper-preview.jpg);
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  border-radius: 30px;
+}

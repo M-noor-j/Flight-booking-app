@@ -14,12 +14,12 @@ const FlightResultCard = ({img,title,description, flightname, flightaction,   fl
           </div>
           <div className="jfk">
             <div className="text-center">{flightname}</div>
-            <div className="text-center">{flightaction}</div>
+            <div className="text-center color-text">{flightaction}</div>
             <div className="text-center">{flighttime}</div>
           </div>
           <div className="jfk">
             <div>{flightbom}</div>
-            <div>{flightgain}</div>
+            <div  className="">{flightgain}</div>
           </div>
           <div className="jfk">
             <div className="text-center fs-3 fw-bold">{flightprice}</div>

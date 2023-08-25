@@ -1,0 +1,14 @@
+.img-tour-dashboard{
+    background: linear-gradient(
+        0deg,
+        rgba(18, 4, 122, 0.268),
+        rgba(18, 4, 122, 0.367)
+      ),
+      url(https://www.touraineloirevalley.co.uk/wp-content/uploads/sites/2/2020/04/place_plumereau_ville_tours_credit_adt_touraine_jcoutand_2029.jpg);
+    height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    border-radius: 30px;
+}

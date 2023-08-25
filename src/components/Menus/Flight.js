@@ -190,14 +190,14 @@ const Flight = () => {
         <div className="col ">
           <div className="bg-white d-flex justify-content-center align-items-center my-1 ">
             <div className="border-1 shadow px-4 py-4 calender-btn fw-bold text-btn-bg">
-              29 JUlY 2023
+              Frst Class
             </div>
           </div>
         </div>
         <div className="col me-3">
           <div className="bg-white d-flex justify-content-center align-items-center my-1 ">
             <div className="border-1 shadow px-4 py-4 calender-btn fw-bold text-btn-bg">
-              2 Traveller
+             Search
             </div>
           </div>
         </div>
