@@ -1,0 +1,16 @@
+
+.container-bg{
+    border-radius: 30px;
+}
+.input-class {
+  width: 25rem;
+  border-radius: 30px;
+}
+.strap {
+  border-radius: 60px;
+}
+.btn-proceed{
+    background-color: #422AFB;
+    color: white;
+    border-radius: 30px;
+}

@@ -17,6 +17,7 @@ import Bookings from "components/Menus/Bookings";
 import BusManagement from "components/Menus/BusManagement";
 import ToursHotel from "components/Menus/ToursHotel";
 import HotelManagement from "components/Menus/HotelManagement";
+import PaymentInfo from "components/paymentinfo/PaymentInfo";
 // Auth Imports
 
 const routes = [
@@ -63,6 +64,13 @@ const routes = [
     path: "/tourshotel",
     icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
     component: ToursHotel,
+  },
+  {
+    name: "Paymnent ",
+    layout: "/admin",
+    path: "/payment",
+    icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
+    component: PaymentInfo,
   },
   {
     name: "Hotel Management",
