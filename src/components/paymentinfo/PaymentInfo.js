@@ -17,7 +17,6 @@ const PaymentInfo = () => {
       description: "pay with paypal",
       img: "https://www.freepnglogos.com/uploads/visa-and-mastercard-logo-26.png",
     },
-  
   ];
   return (
     <>
@@ -189,23 +188,29 @@ const PaymentInfo = () => {
               </div>
               <div className="col ">
                 <div className="d-flex justify-content-end align-items-center mt-2">
-                  <img src={item.img} alt="" className="" style={{width:"8rem"}} />
+                  <img
+                    src={item.img}
+                    alt=""
+                    className=""
+                    style={{ width: "8rem" }}
+                  />
                 </div>
               </div>
             </div>
           </div>
- 
-      
         ))}
-       {/* //   total  */}
-          <div className="d-flex justify-content-around fs-3 fw-bold mt-5">
-             <div className="total-heading"> TOTAL :</div>
-             <div className="total-amount">$319.24</div>  
-            </div>
+        {/* //   total  */}
+        <div className="d-flex justify-content-around fs-3 fw-bold mt-5">
+          <div className="total-heading"> TOTAL :</div>
+          <div className="total-amount">$319.24</div>
+        </div>
 
-            <div className="d-flex justify-content-center mt-5">
-                <button className="btn btn-proceed fs-5 px-4 py-2 shadow "> Proceed to payment </button>
-            </div>
+        <div className="d-flex justify-content-center mt-5">
+          <button className="btn btn-proceed fs-5 px-4 py-2 shadow ">
+            {" "}
+            Proceed to payment{" "}
+          </button>
+        </div>
       </div>
     </>
   );

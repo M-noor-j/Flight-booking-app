@@ -13,6 +13,8 @@ const BusManagement = () => {
       flightbom: "BOM",
       flightgain: "14:20",
       price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://fmgroup.pk/img/01.png",
@@ -24,6 +26,8 @@ const BusManagement = () => {
       flightbom: "BOM",
       flightgain: "14:20",
       price: "$1340",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://seeklogo.com/images/E/Emirates_Airlines-logo-3A6A7D24CA-seeklogo.com.png",
@@ -35,6 +39,8 @@ const BusManagement = () => {
       flightbom: "BOM",
       flightgain: "14:20",
       price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Qatar_Airways_logo.svg/2560px-Qatar_Airways_logo.svg.png",
@@ -46,6 +52,8 @@ const BusManagement = () => {
       flightbom: "BOM",
       flightgain: "14:20",
       price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Qatar_Airways_logo.svg/2560px-Qatar_Airways_logo.svg.png",
@@ -57,6 +65,8 @@ const BusManagement = () => {
       flightbom: "BOM",
       flightgain: "14:20",
       price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
   ];
   return (
@@ -205,9 +215,9 @@ const BusManagement = () => {
       </div>
 
       <div className="result fs-5 mt-5 ms-2">Results (27)</div>
-      {data.map((item, i) => (
+      {data.map((item, index) => (
         <BusResultCard
-          key={i}
+          key={index}
           img={item.img}
           title={item.title}
           description={item.description}
@@ -217,6 +227,8 @@ const BusManagement = () => {
           flightbom={item.flightbom}
           flightgain={item.gain}
           flightprice={item.price}
+          layout={item.layout}
+          path={item.path}
         />
       ))}
     </>

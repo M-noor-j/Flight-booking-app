@@ -7,56 +7,66 @@ const Flight = () => {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Qatar_Airways_logo.svg/2560px-Qatar_Airways_logo.svg.png",
       title: "JFK",
       description: "13:00",
-      flightname:"Qatar",
-      flightaction:"11H 20M",
-      flighttime:"NON STOP",
-      flightbom:"BOM",
-      flightgain:"14:20",
-      price:"$1590"
+      flightname: "Qatar",
+      flightaction: "11H 20M",
+      flighttime: "NON STOP",
+      flightbom: "BOM",
+      flightgain: "14:20",
+      price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pakistan_International_Airlines_Logo.svg/2560px-Pakistan_International_Airlines_Logo.svg.png",
       title: "JFK",
       description: "13:00",
-      flightname:"PIA",
-      flightaction:"11H 20M",
-      flighttime:"NON STOP",
-      flightbom:"BOM",
-      flightgain:"14:20",
-      price:"$1340"
+      flightname: "PIA",
+      flightaction: "11H 20M",
+      flighttime: "NON STOP",
+      flightbom: "BOM",
+      flightgain: "14:20",
+      price: "$1340",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://seeklogo.com/images/E/Emirates_Airlines-logo-3A6A7D24CA-seeklogo.com.png",
       title: "JFK",
       description: "13:00",
-      flightname:"EMIRATES",
-      flightaction:"11H 20M",
-      flighttime:"NON STOP",
-      flightbom:"BOM",
-      flightgain:"14:20",
-      price:"$1590"
+      flightname: "EMIRATES",
+      flightaction: "11H 20M",
+      flighttime: "NON STOP",
+      flightbom: "BOM",
+      flightgain: "14:20",
+      price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Qatar_Airways_logo.svg/2560px-Qatar_Airways_logo.svg.png",
       title: "JFK",
       description: "13:00",
-      flightname:"Qatar",
-      flightaction:"11H 20M",
-      flighttime:"NON STOP",
-      flightbom:"BOM",
-      flightgain:"14:20",
-      price:"$1590"
+      flightname: "Qatar",
+      flightaction: "11H 20M",
+      flighttime: "NON STOP",
+      flightbom: "BOM",
+      flightgain: "14:20",
+      price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Qatar_Airways_logo.svg/2560px-Qatar_Airways_logo.svg.png",
       title: "JFK",
       description: "13:00",
-      flightname:"Qatar",
-      flightaction:"11H 20M",
-      flighttime:"NON STOP",
-      flightbom:"BOM",
-      flightgain:"14:20",
-      price:"$1590"
+      flightname: "Qatar",
+      flightaction: "11H 20M",
+      flighttime: "NON STOP",
+      flightbom: "BOM",
+      flightgain: "14:20",
+      price: "$1590",
+      layout: "/admin",
+      path: "/payment",
     },
   ];
   return (
@@ -186,43 +196,41 @@ const Flight = () => {
               </div>
             </div>
           </div>
-              {/* second part */}
-        <div className="col ">
-          <div className="bg-white d-flex justify-content-center align-items-center my-1 ">
-            <div className="border-1 shadow px-4 py-4 calender-btn fw-bold text-btn-bg">
-              Frst Class
+          {/* second part */}
+          <div className="col ">
+            <div className="bg-white d-flex justify-content-center align-items-center my-1 ">
+              <div className="border-1 shadow px-4 py-4 calender-btn fw-bold text-btn-bg">
+                Frst Class
+              </div>
+            </div>
+          </div>
+          <div className="col me-3">
+            <div className="bg-white d-flex justify-content-center align-items-center my-1 ">
+              <div className="border-1 shadow px-4 py-4 calender-btn fw-bold text-btn-bg">
+                Search
+              </div>
             </div>
           </div>
         </div>
-        <div className="col me-3">
-          <div className="bg-white d-flex justify-content-center align-items-center my-1 ">
-            <div className="border-1 shadow px-4 py-4 calender-btn fw-bold text-btn-bg">
-             Search
-            </div>
-          </div>
-        </div>
-        </div>
-
-    
       </div>
 
       <div className="result fs-5 mt-5 ms-2">Results (27)</div>
-      {data.map((item, i) => (
-         
-            <FlightResultCard
-              key={i}
-              img={item.img}
-              title={item.title}
-              description={item.description}
-              flightname={item.flightname}
-              flightaction={item.flightaction}
-              flighttime={item.flighttime}
-              flightbom={item.flightbom}
-              flightgain={item.gain}
-              flightprice={item.price}
-            />
-        
-        ))}
+      {data.map((item, index) => (
+        <FlightResultCard
+          key={index}
+          img={item.img}
+          title={item.title}
+          description={item.description}
+          flightname={item.flightname}
+          flightaction={item.flightaction}
+          flighttime={item.flighttime}
+          flightbom={item.flightbom}
+          flightgain={item.gain}
+          flightprice={item.price}
+          layout={item.layout}
+          path={item.path}
+        />
+      ))}
     </>
   );
 };

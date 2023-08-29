@@ -1,12 +1,25 @@
 import React from "react";
 import "./FlightResultCard.css";
-const FlightResultCard = ({img,title,description, flightname, flightaction,   flighttime,   flightbom, flightgain, flightprice}) => {
+import { Link } from "react-router-dom";
+const FlightResultCard = ({
+  img,
+  title,
+  description,
+  flightname,
+  flightaction,
+  flighttime,
+  flightbom,
+  flightgain,
+  flightprice,
+  layout,
+  path,
+}) => {
   return (
     <>
       <div className="bg-white shadow rounded mt-4">
         <div className="d-flex justify-content-between align-items-center mx-3 py-3">
           <div className="img">
-            <img src={img} alt=""  style={{width:"7rem"}}/>
+            <img src={img} alt="" style={{ width: "7rem" }} />
           </div>
           <div className="jfk">
             <div className="text-center">{title}</div>
@@ -19,13 +32,14 @@ const FlightResultCard = ({img,title,description, flightname, flightaction,   fl
           </div>
           <div className="jfk">
             <div>{flightbom}</div>
-            <div  className="">{flightgain}</div>
+            <div className="">{flightgain}</div>
           </div>
           <div className="jfk">
             <div className="text-center fs-3 fw-bold">{flightprice}</div>
-            <div>
-                <button className="btn btn-ticket">Book Now</button>
-            </div>
+
+            <Link to={layout + path} className="btn btn-ticket">
+              Book Now
+            </Link>
           </div>
         </div>
       </div>

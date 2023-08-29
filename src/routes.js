@@ -18,6 +18,7 @@ import BusManagement from "components/Menus/BusManagement";
 import ToursHotel from "components/Menus/ToursHotel";
 import HotelManagement from "components/Menus/HotelManagement";
 import PaymentInfo from "components/paymentinfo/PaymentInfo";
+import TrendingHotel from "components/trendinghotel/TrendingHotel";
 // Auth Imports
 
 const routes = [
@@ -72,12 +73,20 @@ const routes = [
     icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
     component: PaymentInfo,
   },
+  
+    {
+      name: "Hotel Managment",
+      layout: "/admin",
+      icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+      path: "/Hotel-management",
+      component: HotelManagement,
+    },
   {
-    name: "Hotel Management",
+    name: "Trending Hotels ",
     layout: "/admin",
-    path: "/Hotel-Management",
+    path: "/trending-hotel",
     icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
-    component: HotelManagement,
+    component: TrendingHotel,
   },
 ];
 
