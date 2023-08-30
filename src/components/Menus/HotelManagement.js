@@ -10,10 +10,9 @@ const HotelManagement = () => {
       titlethree: "Lahore",
       titlefour: "Gujranwala",
       titlefive: "Rawalpindi",
-      // path: "/flight-management",
-      // layout: "/admin",
+      path: "/trending-hotel",
+      layout: "/admin",
     },
-   
   ];
   return (
     <>
@@ -28,10 +27,17 @@ const HotelManagement = () => {
       <div className="fs-3 mt-5 fw-bold">Trending places</div>
       {data.map((item, index) => (
         <div key={index}>
-        <CardGrid titleone={item.titleone} titletwo={item.titletwo} titlethree={item.titlethree} titlefour={item.titlefour} titlefive={item.titlefive}/>
+          <CardGrid
+            titleone={item.titleone}
+            titletwo={item.titletwo}
+            titlethree={item.titlethree}
+            titlefour={item.titlefour}
+            titlefive={item.titlefive}
+            path={item.path}
+            layout={item.layout}
+          />
         </div>
       ))}
-      {/* <CardGrid /> */}
     </>
   );
 };

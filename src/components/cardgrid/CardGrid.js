@@ -1,8 +1,10 @@
 import React from "react";
 import "./CardGrid.css";
-const CardGrid = ({titleone,titletwo,titlethree,titlefour,titlefive}) => {
+import { Link } from "react-router-dom";
+const CardGrid = ({titleone,titletwo,titlethree,titlefour,titlefive ,path,layout}) => {
   return (
     <>
+    <Link to={layout + path}>
     <div className="row mt-5">
         <div className="col">
         <div class="module darken fs-3 p-4">{titleone}</div>
@@ -22,6 +24,7 @@ const CardGrid = ({titleone,titletwo,titlethree,titlefour,titlefive}) => {
         <div class="module darken fs-3 p-4">{titlefive}</div>
         </div>
     </div>
+    </Link>
     </>
   );
 };
