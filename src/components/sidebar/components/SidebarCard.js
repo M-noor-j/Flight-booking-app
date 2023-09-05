@@ -66,7 +66,7 @@ export default function SidebarDocs() {
           PRO!
         </Text>
       </Flex>
-      <Link href='https://horizon-ui.com/pro?ref=horizon-chakra-free'>
+      {/* <Link href='https://horizon-ui.com/pro?ref=horizon-chakra-free'>
         <Button
           bg='whiteAlpha.300'
           _hover={{ bg: "whiteAlpha.200" }}
@@ -79,7 +79,7 @@ export default function SidebarDocs() {
           mx='auto'>
           Upgrade to PRO
         </Button>
-      </Link>
+      </Link> */}
     </Flex>
   );
 }

@@ -5,6 +5,7 @@
 .input-class {
   width: 25rem;
   border-radius: 30px;
+outline: none;
 }
 .strap {
   border-radius: 60px;

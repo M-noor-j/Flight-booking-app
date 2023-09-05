@@ -33,18 +33,17 @@ const HotelGallery = () => {
           </div>
         ))}
       </div>
-
       <div className="fs-5 fw-bold mt-4">Description Hotel</div>
       <div className="w-75 mt-3">
-        Located in Islamabad, 16 km from Shah Faisal Mosque ,Noors B&B provide
-        accomodation with a terrace,free private parking and a resturant.Amoung
-        the facilities at this property are room are room service and a24-hour
-        front desk,along with free Wifi thtough out the property.The property is
-        non-smoking and is set 17km from ayub National park.
+        Located in Islamabad, 16 km from Shah Faisal Mosque, Noors B&B provide
+        accomodation with a terrace, free private parking and a resturant.
+        Amoung the facilities at this property are room are room service and
+        a24-hour front desk, along with free Wifi thtough out the property.The
+        property is non-smoking and is set 17 km from ayub National park.
         <br />
         all unit at the hotel are equipped with a seating area. Fearturing a
-        private bathroom with a shower and free toiletries,rooms at Noors B&B
-        also provide guests with a city view.At the acommodation every room is
+        private bathroom with a shower and free toiletries, rooms at Noors B&B
+        also provide guests with a city view. At the acommodation every room is
         fitted with bed lineed and towels
       </div>
       <div className="fs-5 fw-bold mt-4">Most Popular Facilities </div>
@@ -90,13 +89,11 @@ const HotelGallery = () => {
         />
         <span> Breakfast </span>
       </div>
-
       <div className="bg-white rounded shadow mt-4 py-4 px-4">
         <div className="fs-4">Propert Hightlihgts</div>
-
         <div className="d-flex mt-2">
           <div>
-            <span className="fw-bold"> Breakfast info:</span> Halal,Asian
+            <span className="fw-bold"> Breakfast info:</span> Halal, Asian
           </div>
           <div className="ms-5">
             <span className="fw-bold"> Room with:</span>Landmark view, City

@@ -1,0 +1,10 @@
+.bg-radius{
+    border-radius: 30px;
+}
+.input-radius{
+  border-radius: 20px;
+  outline: none;
+}
+.summary-radius{
+    border-radius: 30px;
+}

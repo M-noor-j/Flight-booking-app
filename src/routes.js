@@ -20,6 +20,7 @@ import HotelManagement from "components/Menus/HotelManagement";
 import PaymentInfo from "components/paymentinfo/PaymentInfo";
 import TrendingHotel from "components/trendinghotel/TrendingHotel";
 import HotelGallery from "components/hotelgallery/HotelGallery";
+import HotelPayment from "components/hotelpayment/HotelPayment";
 // Auth Imports
 
 const routes = [
@@ -95,6 +96,13 @@ const routes = [
     path: "/Hotel-gallery",
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     component: HotelGallery,
+  },
+  {
+    name: "Hotel-Payment ",
+    layout: "/admin",
+    path: "/Hotel-payment",
+    icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
+    component: HotelPayment,
   },
 ];
 
